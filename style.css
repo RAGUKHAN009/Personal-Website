@@ -1,0 +1,237 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.heroCont {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: red; */
+    overflow: hidden;
+    position: relative;
+}
+
+.item {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+
+.cart1 {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    border-radius: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cart2 {
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    z-index: 3;
+    position: absolute;
+    bottom: 50px;
+    right: 35%;
+}
+
+.cart3 {
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    z-index: 3;
+    position: absolute;
+    bottom: 50px;
+    right: 20%;
+}
+
+.cart4 {
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    z-index: 3;
+    position: absolute;
+    bottom: 50px;
+    right: 5%;
+}
+
+
+
+
+.buttons {
+    position: absolute;
+    bottom: 50px;
+    z-index: 100;
+}
+
+.car1 {
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    z-index: 3;
+    position: absolute;
+    bottom: 50px;
+    right: 5%;
+    animation: ShowSlide 1s linear 1 forwards;
+}
+
+@keyframes ShowSlide {
+    to {
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 0;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+    }
+}
+
+.car4 {
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    z-index: 3;
+    position: absolute;
+    bottom: 50px;
+    right: 20%;
+    animation: SlideSlide4 1s linear 1 forwards;
+}
+
+
+@keyframes SlideSlide4 {
+    to {
+        transform: translateX(255px);
+    }
+}
+
+.car3 {
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    z-index: 3;
+    position: absolute;
+    bottom: 50px;
+    right: 35%;
+    animation: SlideSlide3 1s linear 1 forwards;
+}
+
+@keyframes SlideSlide3 {
+    to {
+        transform: translateX(255px);
+    }
+}
+
+.car2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: hideSlide2 1s linear 1 forwards;
+}
+
+@keyframes hideSlide2 {
+    to {
+        width: 220px;
+        height: 300px;
+        z-index: 3;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 50px;
+        right: 35%;
+    }
+}
+
+.carr1 {
+    width: 220px;
+    height: 300px;
+    border-radius: 10px;
+    animation: ShowSlideF 1s linear 1 forwards;
+    z-index: 3;
+    position: absolute;
+    bottom: 50px;
+    right: 20%;
+}
+
+@keyframes ShowSlideF {
+    to {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        z-index: 1;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.carr2 {
+    animation: slideSlideF 1s linear 1 forwards;
+    width: 220px;
+    height: 300px;
+    z-index: 3;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50px;
+    right: 20%;
+}
+
+@keyframes slideSlideF {
+    to {
+        transform: translateX(-255px);
+        z-index: 3;
+    }
+}
+
+.carr3 {
+    animation: slideSlideF1 1s linear 1 forwards;
+    width: 220px;
+    height: 300px;
+    z-index: 3;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50px;
+    right: 5%;
+}
+
+@keyframes slideSlideF1 {
+    to {
+        transform: translateX(-255px);
+        z-index: 3;
+    }
+}
+
+.carr4 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    animation: HideSlide1 1s linear 1 forwards;
+}
+
+@keyframes HideSlide1 {
+    to {
+        width: 220px;
+        height: 300px;
+        z-index: 3;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 50px;
+        right: 5%;
+    }
+}
